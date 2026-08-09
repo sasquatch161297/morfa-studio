@@ -1,0 +1,9 @@
+import type { Metadata } from "next";
+import { ImagePanel } from "@/components/editorial/ImagePanel";
+import { InquiryCTA } from "@/components/editorial/InquiryCTA";
+
+export const metadata: Metadata = { title: "Studio", description: "MORFA observes how nature builds." };
+
+export default function StudioPage() {
+  return <><section className="page-hero"><p className="kicker">MORFA Studio — Costa Rica</p><div className="page-hero-grid"><h1>We observe how nature builds.</h1><p>A design practice working between natural history, material research and functional form.</p></div></section><section className="manifesto"><p className="eyebrow">Manifesto</p><blockquote>How a root grows.<br />How water erodes stone.<br />How fungal structures expand.<br />How a seed protects what grows within.<br /><br /><span>MORFA does not reproduce nature.</span></blockquote></section><section className="editorial-split"><div><p className="eyebrow">Designed in Costa Rica</p><h2>A living laboratory.</h2></div><div className="body"><p>Costa Rica’s compressed geographies—volcanic mass, coastal movement, high-altitude ecosystems and dense biological networks—create an unusually rich field for observation.</p><p>We approach that context without symbols or nostalgia. The studio documents systems, extracts principles and tests them through geometry, material and making.</p></div></section><section className="product-story-media"><ImagePanel src="/images/collections/mycelia/macro.png" alt="Indigo fungal morphology observed at close range" /></section><section className="translation"><p className="eyebrow">Method</p><div className="translation-flow"><div><span>01</span><strong>Observe</strong></div><div><span>02</span><strong>Isolate</strong></div><div><span>03</span><strong>Draw</strong></div><div><span>04</span><strong>Make</strong></div><div><span>05</span><strong>Live</strong></div></div></section><InquiryCTA /></>;
+}
