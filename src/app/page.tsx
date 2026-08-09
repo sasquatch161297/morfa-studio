@@ -32,7 +32,7 @@ export default function Home() {
 
       <section className="object-stories" aria-labelledby="objects-title">
         <div className="section" style={{ paddingBottom: 0 }}><p className="eyebrow">02 — Selected objects</p><h2 className="display" id="objects-title">Six studies in growth.</h2></div>
-        {products.slice(0, 4).map((product) => (
+        {products.map((product) => (
           <article className="object-row" key={product.slug}>
             <Link className="image-panel" href={`/objects/${product.slug}`} data-cursor="View"><Image src={product.heroImage} alt={`${product.name} ${product.type}`} fill sizes="(max-width: 760px) 100vw, 65vw" /></Link>
             <Reveal className="object-info"><span className="object-no">MYCELIA {product.objectNumber}</span><h3>{product.name}</h3><p>{product.type}</p><p>{product.inspiration}</p><Link className="text-link" href={`/objects/${product.slug}`}>View object <span>↗</span></Link></Reveal>

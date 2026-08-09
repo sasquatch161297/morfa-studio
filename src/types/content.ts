@@ -52,4 +52,6 @@ export type JournalArticle = {
   date: string;
   excerpt: string;
   image: string;
+  body: string[];
+  observation: string;
 };

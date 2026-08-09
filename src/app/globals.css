@@ -136,6 +136,18 @@ img { object-fit:cover; }
 .article-info { display:grid; grid-template-columns:1fr auto; gap:2rem; padding-top:1.3rem; }
 .article-info h2 { font-family:var(--font-serif); font-size:clamp(2.2rem,4vw,4rem); font-weight:400; line-height:.9; margin:0; }
 .article-info span { text-transform:uppercase; font-size:8px; letter-spacing:.14em; }
+.article-hero { min-height:86vh; padding:12rem 3vw 4rem; display:grid; grid-template-columns:2fr 1fr; gap:8vw; align-items:end; }
+.article-hero h1 { max-width:1000px; margin:0; font-family:var(--font-serif); font-size:clamp(4.8rem,10vw,11rem); font-weight:400; line-height:.78; letter-spacing:-.05em; }
+.article-hero > div:last-child { display:grid; gap:2.5rem; align-self:end; padding-bottom:1rem; }
+.article-hero > div:last-child span { text-transform:uppercase; font-size:8px; letter-spacing:.18em; }
+.article-hero > div:last-child p { max-width:380px; font-size:1.2rem; line-height:1.55; }
+.article-image { padding:0 3vw; }
+.article-image .image-panel { height:82vh; }
+.article-body { padding:10vw 3vw; display:grid; grid-template-columns:1fr 1.2fr; gap:10vw; }
+.article-body aside { position:sticky; top:120px; align-self:start; max-width:470px; }
+.article-body blockquote { margin:0; font-family:var(--font-serif); font-size:clamp(2.2rem,4vw,4.6rem); line-height:1; letter-spacing:-.035em; }
+.article-body > div { max-width:650px; }
+.article-body > div p { margin:0 0 2rem; font-family:var(--font-serif); font-size:clamp(1.5rem,2.2vw,2.1rem); line-height:1.45; }
 .contact { min-height:100vh; padding:12rem 3vw 8vw; display:grid; grid-template-columns:1fr 1fr; gap:9vw; }
 .contact h1 { font-family:var(--font-serif); font-size:clamp(4.8rem,9vw,9rem); line-height:.8; font-weight:400; letter-spacing:-.045em; margin:0; }
 .contact-address { margin-top:6rem; line-height:1.8; }
@@ -223,6 +235,12 @@ img { object-fit:cover; }
   .manifesto blockquote { font-size:13vw; }
   .journal-grid { padding:18px 18px 7rem; grid-template-columns:1fr; gap:6rem; }
   .article-card:nth-child(4n+2) { margin-top:0; }
+  .article-hero { min-height:78vh; padding:9rem 18px 3rem; grid-template-columns:1fr; gap:3rem; }
+  .article-hero h1 { font-size:18vw; }
+  .article-image { padding:0 18px; }
+  .article-image .image-panel { height:64vh; }
+  .article-body { padding:7rem 18px; grid-template-columns:1fr; gap:5rem; }
+  .article-body aside { position:static; }
   .contact { padding:9rem 18px 6rem; grid-template-columns:1fr; }
   .contact h1 { font-size:19vw; }
   .contact form { grid-template-columns:1fr; }
